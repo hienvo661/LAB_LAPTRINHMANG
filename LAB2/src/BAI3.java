@@ -15,18 +15,17 @@ public class BAI3 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		double sodien;
+		float sodien, tiendien;
 		Scanner banphim = new Scanner(System.in);
 		System.out.println("Số điện= ");
-		sodien = banphim.nextDouble();
+		sodien = banphim.nextFloat();
 		if (sodien>=50) {
-			System.out.println("Số tiền: " +(sodien*1000));
+			tiendien = sodien*1000;
 		}
 		else {
-			System.out.println("Số tiền: "+(50*1000+(sodien-50)*1200));
-			
+			tiendien = 50 * 1000 + (sodien-50) *1200;
 		}
-		
+		System.out.println("Tiền Điện= " +tiendien);
 
 	}
 
