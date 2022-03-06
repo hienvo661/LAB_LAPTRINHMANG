@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -9,40 +10,54 @@ import java.util.Scanner;
  *
  */
 public class BAI4 {
-	static String Hoten;
-	static double DTB;
-	public void nhap() 
+	
+	public static void sortSV(String sv[], float diemSV[]) 
 	{
-		Scanner banphim = new Scanner(System.in);
-		System.out.println("Nhập vào họ và tên: ");
-		Hoten = banphim.nextLine();
-		
-		System.out.println("Điểm trung bình: ");
-		DTB = banphim.nextDouble();
-		
-	}
-	public void xuat() 
-	{
-		System.out.println("\n ----------------------");
-		System.out.printf("Họ và tên sinh viên: %s \nĐiểm trung bình: %f \nHọc lực: %s", Hoten, DTB, xeploai());
-	}
-	public String xeploai()
-	{
-		if (DTB >= 9 )
-			return "Xuất sắc";
-		else 
-			return "Giỏi";
-		
-	}
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		BAI4 sv = new BAI4();
-		sv.nhap();
-		sv.xuat();
-		sv.xeploai();
-	}
-
+        for (int i = 0; i < sv.length - 1; i++) 
+        {
+            for (int j = i + 1; j < sv.length; j++) 
+            {
+                if (diemSV[i] > diemSV[j]) 
+                {
+                    float temp = diemSV[i];
+                    diemSV[i] = diemSV[j];
+                    diemSV[j] = temp;
+                    String svTemp = sv[i];
+                    sv[i] = sv[j];
+                    sv[j] = svTemp;
+                }
+            }
+        }
+    }
+    public static void main(String[] args) {
+        String sv[] = new String[4];
+        float diemSV[] = new float[4];
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < 4; i++) {
+            System.out.printf("Nhập họ và tên cho sinh viên thứ %d : ", i + 1);
+            sv[i] = scanner.nextLine();
+            System.out.printf("Nhập điểm cho sinh viên thứ %d : ", i + 1);
+            diemSV[i] = scanner.nextFloat();
+            scanner.nextLine();
+        }
+        System.out.println("Mảng sinh viên: " + Arrays.toString(sv));
+        System.out.println("Mảng điểm của sinh viên: " + Arrays.toString(diemSV));
+        sortSV(sv, diemSV);
+        for (int i = 0; i < 4; i++) {
+            System.out.println("Ho ten: " + sv[i]);
+            System.out.println("Diem: " + diemSV[i]);
+            if (diemSV[i] >= 9) {
+                System.out.println("Học Lực: Xuất Xắc!");
+            } else if (diemSV[i] >= 7.5) {
+                System.out.println("Học Lực: Giỏi!");
+            } else if (diemSV[i] >= 6.5) {
+                System.out.println("Học Lực: Khá!");
+            } else if (diemSV[i] >= 5) {
+                System.out.println("Học Lực: Trung Bình!");
+            } else {
+                System.out.println("Học Lực: Yếu!");
+            }
+            System.out.println();
+        }
+    }
 }
