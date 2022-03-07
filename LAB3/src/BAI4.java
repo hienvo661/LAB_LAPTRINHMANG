@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class BAI4 {
 	
-	public static void sortSV(String sv[], float diemSV[]) 
+	public static void XS_SinhVien(String sv[], float diemSV[]) 
 	{
         for (int i = 0; i < sv.length - 1; i++) 
         {
@@ -42,7 +42,10 @@ public class BAI4 {
         }
         System.out.println("Mảng sinh viên: " + Arrays.toString(sv));
         System.out.println("Mảng điểm của sinh viên: " + Arrays.toString(diemSV));
-        sortSV(sv, diemSV);
+        
+        
+        XS_SinhVien(sv, diemSV);
+        
         for (int i = 0; i < 4; i++) {
             System.out.println("Ho ten: " + sv[i]);
             System.out.println("Diem: " + diemSV[i]);
