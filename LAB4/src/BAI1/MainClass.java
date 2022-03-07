@@ -9,7 +9,7 @@ public class MainClass {
 		// nhập dữ liệu
 		String ten = sp1.getTenSP(); 
 		System.out.println("Tên sản phẩm: " +ten);
-		sp1.setTenSP("Đậu Thị Liễu");
+		sp1.setTenSP("number one");
 		//-------------------------------
 		
 //		sp1.nhap();
