@@ -1,6 +1,7 @@
 package BAI2;
 
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class SanPham {
@@ -37,11 +38,12 @@ public class SanPham {
 	}
 	public void xuat() 
 	{
-		System.out.println("Tên sản phẩm: " +tenSP);
-		System.out.println("Giá sản phẩm: " +giaSP);
+		System.out.println("Tên sản phẩm: " +String.valueOf(tenSP)); // kiểu 1 dùng String.valueOf
+		System.out.println("Giá sản phẩm: " +giaSP); //Kiểu 2 dùng trực tiếp
 		System.out.println("Giảm giá: " +GiamGia);
 		System.out.println("Thuế nhập khẩu: " +getThueNhapKhau());
 		System.out.println("Thành tiền: " +Hoadon());
+		System.out.println("------------------------------------");
 	}
 	
 }
