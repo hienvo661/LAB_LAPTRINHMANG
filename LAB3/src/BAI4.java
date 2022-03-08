@@ -47,8 +47,8 @@ public class BAI4 {
         XS_SinhVien(sv, diemSV);
         
         for (int i = 0; i < 4; i++) {
-            System.out.println("Ho ten: " + sv[i]);
-            System.out.println("Diem: " + diemSV[i]);
+            System.out.println("Họ tên: " + sv[i]);
+            System.out.println("Điểm: " + diemSV[i]);
             if (diemSV[i] >= 9) {
                 System.out.println("Học Lực: Xuất Xắc!");
             } else if (diemSV[i] >= 7.5) {
