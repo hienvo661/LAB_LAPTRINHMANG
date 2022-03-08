@@ -22,7 +22,9 @@ public class MainClass {
 		//-------------------------------
 		double giasp2 = sp2.getDongia();
 		System.out.println("Giá sản phẩm: " +giasp2);
-		sp2.setDongia(21000);
+		sp2.setDongia(20000);
+		
+		
 //		sp1.nhap();
 //		sp2.nhap();
 		// xuất dữ liệu
