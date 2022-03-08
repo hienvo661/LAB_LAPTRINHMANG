@@ -12,10 +12,12 @@ public class Main {
 		// sử dụng getter - setter
 		SanPham sp1 = new SanPham();
 		sp1.setTenSP("Đậu đen");
-//		System.out.println(sp1.getTenSP());
+//		System.out.println("Tên sản phẩm: " +sp1.getTenSP());
 		sp1.setGiaSP(1900);
 		sp1.setGiamGia(100);
 //		System.out.println("Giá sản phẩm: " +sp1.getgiaSP());
+//		System.out.println("Giảm giá: " +sp1.getGiamgia());
+//		System.out.println("Thành tiền: "+sp1.Hoadon());
 		sp1.xuat();
 	}
 
