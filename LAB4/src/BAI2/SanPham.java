@@ -5,19 +5,43 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class SanPham {
-	double giaSP,GiamGia;
-	String tenSP;
+	private double giaSP,GiamGia;
+	private String tenSP;
 	
-	public SanPham(String _tenSP, double _GiaSP,double _GiamGia) {
-		this.tenSP = _tenSP;
-		this.giaSP = _GiaSP;
-		this.GiamGia = _GiamGia;
+	public String getTenSP() {
+		return tenSP;
 	}
-	public SanPham(String _tenSP, double _GiaSP) {
-		this.tenSP = _tenSP;
-		this.giaSP = _GiaSP;
-		this.GiamGia = 0;
+	public void setTenSP(String tensp) {
+		this.tenSP = tensp;
 	}
+	public double getgiaSP() {
+		return giaSP;
+	}
+	public void setGiaSP(double giasp) {
+		// setter trong vùng giá cố định
+		if (giasp < 1 || giasp > 10000) {
+		    throw new IllegalArgumentException();
+		  }
+		 this.giaSP = giasp;
+	}
+	public double getGiamgia() {
+		return GiamGia;
+	}
+	public double setGiamGia(double giamgia) {
+		this.GiamGia = giamgia;
+		return giaSP - GiamGia;
+	}
+	
+//	private SanPham(String _tenSP, double _GiaSP,double _GiamGia) {
+//		this.tenSP = _tenSP;
+//		this.giaSP = _GiaSP;
+//		this.GiamGia = _GiamGia;
+//	}
+//	public SanPham(String _tenSP, double _GiaSP) {
+//		this.tenSP = _tenSP;
+//		this.giaSP = _GiaSP;
+//		this.GiamGia = 0;
+//	}
 	private double getThueNhapKhau() {
 		return giaSP*0.1;
 	}
