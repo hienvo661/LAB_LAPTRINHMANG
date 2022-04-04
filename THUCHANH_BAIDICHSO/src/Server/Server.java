@@ -93,10 +93,10 @@ public class Server extends Thread {
 						String chuoiGui= "ten";
 						buffW.write(chuoiGui+"\n");
 						buffW.flush();
-						break;
+						if(chuoiGui.equals("10")) break;
 					}
-					
 				}
+				
 				socketClient.close();
 
 		}

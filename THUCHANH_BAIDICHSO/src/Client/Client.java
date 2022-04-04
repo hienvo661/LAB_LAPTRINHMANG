@@ -45,9 +45,11 @@ public class Client {
 				buffW.flush();
 				String chuoiNhan = buffR.readLine();
 				System.out.print("Server: "+ chuoiNhan);
-				if(chuoiGui.equals("10")) break;
+				if(chuoiGui.equals("10"));
+				
+				if(chuoiGui.equals("0")) break;
 			}
-			soc.close();
+//			soc.close();
 			
 		} catch (Exception e) {
 			// TODO: handle exception
