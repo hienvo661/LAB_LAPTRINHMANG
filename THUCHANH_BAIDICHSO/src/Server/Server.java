@@ -44,8 +44,10 @@ public class Server extends Thread {
 			InputStream in = socketClient.getInputStream();
 			InputStreamReader inReader = new InputStreamReader(in);
 			BufferedReader buffR = new BufferedReader(inReader);
-			while(true) {
+	
 			String chuoiNhan = buffR.readLine();
+			
+
 			//Gửi trả
 				switch (chuoiNhan) {
 				  case "0":
@@ -71,13 +73,19 @@ public class Server extends Thread {
 				  case "10":
 					System.out.println("Ten");
 					break;
-			}
-			socketClient.close();
-			}
+				}
+				String chuoiGui = chuoiNhan;
+				buffW.write(chuoiNhan+"\n");
+				buffW.flush();
+		}
+		
+				
 			catch (Exception e) {
 			// TODO: handle exception
 			System.err.print(e.getMessage());
-		}
-	
+			}
+
+	}
 }
+		
 
