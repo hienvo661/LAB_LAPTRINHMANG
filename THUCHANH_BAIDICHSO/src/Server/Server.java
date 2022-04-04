@@ -93,7 +93,7 @@ public class Server extends Thread {
 						String chuoiGui= "ten";
 						buffW.write(chuoiGui+"\n");
 						buffW.flush();
-						if(chuoiGui.equals("10")) break;
+						if(chuoiGui.equals("0")) break;
 					}
 				}
 				
