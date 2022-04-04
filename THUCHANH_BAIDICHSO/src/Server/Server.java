@@ -45,41 +45,61 @@ public class Server extends Thread {
 			InputStreamReader inReader = new InputStreamReader(in);
 			BufferedReader buffR = new BufferedReader(inReader);
 	
-			String chuoiNhan = buffR.readLine();
-			
-
-			//Gửi trả
-				switch (chuoiNhan) {
-				  case "0":
-				    System.out.println("Zero");
-				  case "1":
-				    System.out.println("One");
-				  case "2":
-				    System.out.println("Two");
-				  case "3":
-				    System.out.println("Three");
-				  case "4":
-				    System.out.println("Four");
-				  case "5":
-				    System.out.println("Five");
-				  case "6":
-				    System.out.println("Six");
-				  case "7":
-					System.out.println("Seven");
-				  case "8":
-					System.out.println("Eight");
-				  case "9":
-					System.out.println("Nine");
-				  case "10":
-					System.out.println("Ten");
-					break;
+				while(true){
+					String chuoiNhan=buffR.readLine();
+					System.out.print(chuoiNhan);
+					
+					if(chuoiNhan.equals("0")) {
+						String chuoiGui= "zero";
+						buffW.write(chuoiGui+"");
+						buffW.flush();
+					}else if(chuoiNhan.equals("1")) {
+						String chuoiGui= "one";
+						buffW.write(chuoiGui+"\n");
+						buffW.flush();
+					}else if(chuoiNhan.equals("2")) {
+						String chuoiGui= "two";
+						buffW.write(chuoiGui+"\n");
+						buffW.flush();
+					}else if(chuoiNhan.equals("3")) {
+						String chuoiGui= "three";
+						buffW.write(chuoiGui+"\n");
+						buffW.flush();
+					}else if(chuoiNhan.equals("4")) {
+						String chuoiGui= "four";
+						buffW.write(chuoiGui+"\n");
+						buffW.flush();
+					}else if(chuoiNhan.equals("5")) {
+						String chuoiGui= "five";
+						buffW.write(chuoiGui+"\n");
+						buffW.flush();
+					}else if(chuoiNhan.equals("6")) {
+						String chuoiGui= "six";
+						buffW.write(chuoiGui+"\n");
+						buffW.flush();
+					}else if(chuoiNhan.equals("7")) {
+						String chuoiGui= "seven";
+						buffW.write(chuoiGui+"\n");
+						buffW.flush();
+					}else if(chuoiNhan.equals("8")) {
+						String chuoiGui= "eight";
+						buffW.write(chuoiGui+"\n");
+						buffW.flush();
+					}else if(chuoiNhan.equals("9")) {
+						String chuoiGui= "night";
+						buffW.write(chuoiGui+"\n");
+						buffW.flush();
+					}else if(chuoiNhan.equals("10")) {
+						String chuoiGui= "ten";
+						buffW.write(chuoiGui+"\n");
+						buffW.flush();
+						break;
+					}
+					
 				}
-				String chuoiGui = chuoiNhan;
-				buffW.write(chuoiNhan+"\n");
-				buffW.flush();
+				socketClient.close();
+
 		}
-		
-				
 			catch (Exception e) {
 			// TODO: handle exception
 			System.err.print(e.getMessage());
