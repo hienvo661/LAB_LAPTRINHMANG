@@ -24,7 +24,7 @@ public class Client {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try {
-			Socket soc = new Socket("localhost",8989);
+			Socket soc = new Socket("localhost",9999);
 			System.out.print("Conected!\n");
 			
 			InputStream in = soc.getInputStream();
