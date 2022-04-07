@@ -61,60 +61,60 @@ public class Server extends Thread{
 				System.out.print("\n"+chuoiNhan);
 				
 				if(chuoiNhan.equals("1")) {
-					GuiFile("F:\\ECLIPSE\\Eclipse_Workspace\\LAB_LAPTRINHMANG\\KIEMTRA_DOCFILE\\src\\Server\\1.txt");
+					GuiFile("../KIEMTRA_DOCFILE/src/Server/1.txt");
 					buffW.write("\n");
 					buffW.flush();
 				}
 				else if(chuoiNhan.equals("2")) {
-					GuiFile("F:\\\\ECLIPSE\\\\Eclipse_Workspace\\\\LAB_LAPTRINHMANG\\\\KIEMTRA_DOCFILE\\\\src\\\\Server\\\\1.txt");
+					GuiFile("../KIEMTRA_DOCFILE/src/Server/2.txt");
 					buffW.write("\n");
 					buffW.flush();
 				}
 				else if(chuoiNhan.equals("3")) {
-					GuiFile("F:\\\\ECLIPSE\\\\Eclipse_Workspace\\\\LAB_LAPTRINHMANG\\\\KIEMTRA_DOCFILE\\\\src\\\\Server\\\\1.txt");
+					GuiFile("../KIEMTRA_DOCFILE/src/Server/3.txt");
 					buffW.write("\n");
 
 					buffW.flush();
 				}else if(chuoiNhan.equals("4")) {
-					GuiFile("F:\\\\ECLIPSE\\\\Eclipse_Workspace\\\\LAB_LAPTRINHMANG\\\\KIEMTRA_DOCFILE\\\\src\\\\Server\\\\1.txt");
+					GuiFile("../KIEMTRA_DOCFILE/src/Server/4.txt");
 					buffW.write("\n");
 
 					buffW.flush();
 				}
 				else if(chuoiNhan.equals("5")) {
-					GuiFile("F:\\\\ECLIPSE\\\\Eclipse_Workspace\\\\LAB_LAPTRINHMANG\\\\KIEMTRA_DOCFILE\\\\src\\\\Server\\\\1.txt");
+					GuiFile("../KIEMTRA_DOCFILE/src/Server/5.txt");
 					buffW.write("\n");
 
 					buffW.flush();
 				}
 				else if(chuoiNhan.equals("6")) {
-					GuiFile("F:\\\\ECLIPSE\\\\Eclipse_Workspace\\\\LAB_LAPTRINHMANG\\\\KIEMTRA_DOCFILE\\\\src\\\\Server\\\\1.txt");
+					GuiFile("../KIEMTRA_DOCFILE/src/Server/6.txt");
 					buffW.write("\n");
 
 					buffW.flush();
 				}
 				else if(chuoiNhan.equals("7")) {
-					GuiFile("F:\\\\ECLIPSE\\\\Eclipse_Workspace\\\\LAB_LAPTRINHMANG\\\\KIEMTRA_DOCFILE\\\\src\\\\Server\\\\1.txt");
+					GuiFile("../KIEMTRA_DOCFILE/src/Server/7.txt");
 					buffW.write("\n");
 
 					buffW.write(chuoiNhan+"\n");
 					buffW.flush();
 				}
 				else if(chuoiNhan.equals("8")) {
-					GuiFile("F:\\\\ECLIPSE\\\\Eclipse_Workspace\\\\LAB_LAPTRINHMANG\\\\KIEMTRA_DOCFILE\\\\src\\\\Server\\\\1.txt");
+					GuiFile("../KIEMTRA_DOCFILE/src/Server/8.txt");
 					buffW.write("\n");
 
 				
 					buffW.flush();
 				}
 				else if(chuoiNhan.equals("9")) {
-					GuiFile("F:\\ECLIPSE\\\\Eclipse_Workspace\\\\LAB_LAPTRINHMANG\\\\KIEMTRA_DOCFILE\\\\src\\\\Server\\\\1.txt");
+					GuiFile("../KIEMTRA_DOCFILE/src/Server/9.txt");
 					buffW.write("\n");
 
 					buffW.flush();
 				}
 				else if(chuoiNhan.equals("10")) {
-					GuiFile("F:\\\\ECLIPSE\\\\Eclipse_Workspace\\\\LAB_LAPTRINHMANG\\\\KIEMTRA_DOCFILE\\\\src\\\\Server\\\\1.txt");
+					GuiFile("../KIEMTRA_DOCFILE/src/Server/10.txt");
 					buffW.write("\n");
 
 					buffW.flush();
